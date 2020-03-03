@@ -1,5 +1,125 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Consisty]]></title><description><![CDATA[Starting Learning]]></description><link>https://blog.consisty.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 02 Mar 2020 13:59:23 GMT</lastBuildDate><item><title><![CDATA[AndroidX Migration]]></title><description><![CDATA[Google has recently introduced a new way of organizing support libraries called
-AndroidX. Android Jetpack is a suite that provides tools…]]></description><link>https://blog.consisty.com/development/androidx_migration/</link><guid isPermaLink="false">https://blog.consisty.com/development/androidx_migration/</guid><pubDate>Wed, 19 Feb 2020 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Consisty]]></title><description><![CDATA[Starting Learning]]></description><link>https://blog.consisty.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 03 Mar 2020 13:03:40 GMT</lastBuildDate><item><title><![CDATA[Using ProGuard and DexGuard in Your Android App]]></title><description><![CDATA[Android applications and SDKs are easy to decompile using readily available tools. This opens the way for data security violations like…]]></description><link>https://blog.consisty.com/android/using_proguard_and_dexguard_in_your_android_app/</link><guid isPermaLink="false">https://blog.consisty.com/android/using_proguard_and_dexguard_in_your_android_app/</guid><pubDate>Wed, 26 Feb 2020 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Android applications and SDKs are easy to decompile using readily available tools. This opens the way for data security violations like intellectual property theft, credential harvesting, tampering and cloning.&lt;/p&gt;
+&lt;p&gt;Proguard is integrated into the Android build system and it runs only when you build your application in release mode.
+Proguard is completely optional, but it is highly recommended.&lt;/p&gt;
+&lt;h3 id=&quot;important-points-that-should-be-considered-while-applying-the-proguard-in-your-application--&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#important-points-that-should-be-considered-while-applying-the-proguard-in-your-application--&quot; aria-label=&quot;important points that should be considered while applying the proguard in your application   permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Important points that should be considered while applying the ProGuard in your application -&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Do not forget to add the Proguard rules in &lt;code class=&quot;language-text&quot;&gt;proguard-rules.pro&lt;/code&gt; file for any library that you have included in your project.&lt;/li&gt;
+&lt;li&gt;Add the rule for the classes on which you do not want to apply Proguard using keep class.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;how-to-enable-proguard-in-android-studio&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-to-enable-proguard-in-android-studio&quot; aria-label=&quot;how to enable proguard in android studio permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to Enable Proguard in Android Studio&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.645833333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABJ0AAASdAHeZh94AAABgElEQVQoz4VS247dIAzM///Y9gfOQ7VSe1bbE3IhAcIt2EA6kN2+1hpZQ6SxPY6HH29vj8djXeUqd6XMppXc5L6rwxhzHNbZwx76OMAP55C0McpoxKbc8PP9XQght+01zkJMr3Gc5nlDSLntLRrvGXxepJjXaWn4fIlht+GqNcborCUiZPQj4tIjlwyUf7kHKDEvqxwwRa1XDNE6B3FKqfa4/hewNYhphlc0NFZDbLSx1oYQUSVRChRccimnSNGTB7mVqO6cG349P56/n/Oy+BDwCStBSe+7OHUx+ZPPk7/FfSZiap2nSUCplPLew2TrB8fEtz0uRJngkjN3wrchZm7iRJwow7D34YxJKd3+iYttL9wWVXItpYLUUvvAX2PD3XB7iDEEt18VNkF9yakWKoVqJhB0uiq3fOVOMrDM85c4pWgPafQavA6nMmG1YTuC9FEx+cKx5IbMAcCz5nMSYsCFLMsyjuK+EGQcDIbfO0CUxkEZ3BzQnrjCTf75bDv+C3JUd2qaEhzkAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;&amp;quot;Enabling Proguard In Android Studio&amp;quot;&quot;
+        title=&quot;&amp;quot;Enabling Proguard In Android Studio&amp;quot;&quot;
+        src=&quot;/static/c42d87320dec450bc688e8c09da0d774/fcda8/enable_progaurd_in_android_studio_01.png&quot;
+        srcset=&quot;/static/c42d87320dec450bc688e8c09da0d774/12f09/enable_progaurd_in_android_studio_01.png 148w,
+/static/c42d87320dec450bc688e8c09da0d774/e4a3f/enable_progaurd_in_android_studio_01.png 295w,
+/static/c42d87320dec450bc688e8c09da0d774/fcda8/enable_progaurd_in_android_studio_01.png 590w,
+/static/c42d87320dec450bc688e8c09da0d774/efc66/enable_progaurd_in_android_studio_01.png 885w,
+/static/c42d87320dec450bc688e8c09da0d774/c83ae/enable_progaurd_in_android_studio_01.png 1180w,
+/static/c42d87320dec450bc688e8c09da0d774/29114/enable_progaurd_in_android_studio_01.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In Android Studio project, the minifyEnabled property in the build.gradle file enables and disables Proguard for release builds.&lt;/li&gt;
+&lt;li&gt;The minifyEnabled property is part of the buildTypes release block that controls the settings applied to release builds.&lt;/li&gt;
+&lt;li&gt;Set the minifyEnabled property to true to enable Proguard.&lt;/li&gt;
+&lt;li&gt;The getDefaultProguardFile(‘proguard-android.txt’) method obtains the default Proguard settings from the Android SDK tools/proguard folder.&lt;/li&gt;
+&lt;li&gt;Android Studio adds the proguard-rules.pro file at the root of the module, which helps to add custom Proguard rules.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;android &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    compileSdkVersion &lt;span class=&quot;token number&quot;&gt;29&lt;/span&gt;
+    buildToolsVersion &apos;&lt;span class=&quot;token number&quot;&gt;29.0&lt;/span&gt;.&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&apos;
+    ...
+    buildTypes &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            release &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                minifyEnabled &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;
+                proguardFiles getDefaultProguardFile(&apos;proguard-android.txt&apos;)&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &apos;proguard-rules.pro&apos;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;to-add-support-for-proguard&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#to-add-support-for-proguard&quot; aria-label=&quot;to add support for proguard permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;To add support for ProGuard&lt;/h2&gt;
+&lt;p&gt;Add a New Relic Mobile exclusion to your app, for example -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To support New Relic instrumentation, add keep class.&lt;/li&gt;
+&lt;li&gt;To disable warnings related to unresolved problems, add dont warn.&lt;/li&gt;
+&lt;li&gt;To preserve line numbers for crash reporting, add LineNumberTable.&lt;/li&gt;
+&lt;li&gt;To preserve stack information for handled exceptions, add SourceFile and EnclosingMethod.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Add the following to your ProGuard config file &lt;code class=&quot;language-text&quot;&gt;proguard.cfg&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;proguard-android.txt&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;proguard-rules.pro&lt;/code&gt;, etc.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;keep &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; com&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;newrelic&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;dontwarn com&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;newrelic&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;*&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;keepattributes &lt;span class=&quot;token class-name&quot;&gt;Exceptions&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Signature&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InnerClasses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;LineNumberTable&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;SourceFile&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Clean and rebuild your project.&lt;/p&gt;
+&lt;p&gt;Run your app in an emulator or device to start seeing data on your mobile app’s Overview page.
+Optional: Use the New Relic Mobile Settings page to customize your mobile app.&lt;/p&gt;
+&lt;p&gt;Thank You!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Proguard and DexGuard]]></title><description><![CDATA[Proguard The open source optimizer for Java byte-code. It is the most popular optimizer for Java byte-code. It makes your Java and Android…]]></description><link>https://blog.consisty.com/android/progaurd_and_dexgaurd/</link><guid isPermaLink="false">https://blog.consisty.com/android/progaurd_and_dexgaurd/</guid><pubDate>Sat, 22 Feb 2020 11:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAAsSAAALEgHS3X78AAAA/0lEQVQI1wH0AAv/AP///87t+fz//4263QBgsBN0uQBfsHKs1v///+z5/dLx/fH2+kSPxyV9viZ9vjGEwdLm8P///9j05+/+9gAfodUFn9tVxu+GuNwZdbpJkMcfeLtQns4qqNkfodUKnNWV0u0+isQugcAzhcAlecJXxaAwvXMctGlM0Y0AHZ3OA53aVcbwhLfbI3q8T5PJMYHAT57PKKfXHpvNCpjPktLsSZDHOIbDQ43FNILGU8OfLrpxGa9mTNKNAP///9Ht+f3//4263QBisBJzuQBjsXOs1v////D6/tPx/fP3+yyCwRl1uiyAwBV0utXm8f///9rz6fH/9zAnmXwcUYdsAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;&amp;quot;Proguard and DexGuard&amp;quot;&quot;
+        title=&quot;&amp;quot;Proguard and DexGuard&amp;quot;&quot;
+        src=&quot;/static/4af200a4c8ac02606db353bc53645c18/fcda8/progaurd_use_01.png&quot;
+        srcset=&quot;/static/4af200a4c8ac02606db353bc53645c18/12f09/progaurd_use_01.png 148w,
+/static/4af200a4c8ac02606db353bc53645c18/e4a3f/progaurd_use_01.png 295w,
+/static/4af200a4c8ac02606db353bc53645c18/fcda8/progaurd_use_01.png 590w,
+/static/4af200a4c8ac02606db353bc53645c18/0a47e/progaurd_use_01.png 600w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;proguard&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#proguard&quot; aria-label=&quot;proguard permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Proguard&lt;/h2&gt;
+&lt;p&gt;The open source optimizer for Java byte-code. It is the most popular optimizer for Java byte-code. It makes your Java and Android applications up to 90% smaller and up to 20% faster. It renames the remaining classes, fields, and methods using short meaningless names.&lt;/p&gt;
+&lt;p&gt;ProGuard can be used free of charge to process your applications. The ProGuard code is copyrighted and is distributed under the terms of the GNU General Public License (GPL), version 2.&lt;/p&gt;
+&lt;h3 id=&quot;proguard-does-following&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#proguard-does-following&quot; aria-label=&quot;proguard does following permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Proguard does following&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Shrinking – Detects and removes unused classes, fields, methods, and attributes.&lt;/li&gt;
+&lt;li&gt;Optimization – Analyzes and optimizes the byte-code of the methods.&lt;/li&gt;
+&lt;li&gt;Obfuscation – Renames the remaining classes, fields, and methods using short meaningless names.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;key-points&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#key-points&quot; aria-label=&quot;key points permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Key Points&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;ProGuard is a command-line tool with an optional graphical user interface.&lt;/li&gt;
+&lt;li&gt;ProGuard is easy to configure. A few intuitive command line options or a simple configuration file is all it takes.&lt;/li&gt;
+&lt;li&gt;ProGuard is fast. It processes small Android applications and entire runtime libraries in seconds.&lt;/li&gt;
+&lt;li&gt;ProGuard is the default tool in development environments like Oracle’s Wireless Toolkit, NetBeans, EclipseME, Intel’s TXE SDK and Google’s Android SDK.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For more details, visit -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.guardsquare.com/en/products/proguard&quot;&gt;Proguard&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;dexguard&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dexguard&quot; aria-label=&quot;dexguard permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DexGuard&lt;/h2&gt;
+&lt;p&gt;Android applications and SDKs are easy to de-compile using readily available tools. This opens the way for various forms of abuse, including intellectual property theft, credential harvesting, tampering and cloning.&lt;/p&gt;
+&lt;p&gt;DexGuard protects Android (Java, Kotlin) and cross-platform (Cordova, Ionic, React Native) apps and SDKs against reverse engineering and hacking. It hardens their code and enables them to defend themselves at runtime.&lt;/p&gt;
+&lt;p&gt;DexGuard protects Android (Java, Kotlin) and cross-platform (Cordova, Ionic, React Native) apps and SDKs against reverse engineering and hacking.&lt;/p&gt;
+&lt;p&gt;Basically, ProGuard is a generic optimizer for Java byte-code, while DexGuard provides advanced protection for Android applications.&lt;/p&gt;
+&lt;p&gt;DexGuard integrates transparently in the Android build process: it doesn’t require any changes to your source code.&lt;/p&gt;
+&lt;p&gt;DexGuard is fully compatible with all common build tools and development environments (Gradle, Android Studio, Ant, Eclipse, Maven and custom builds).&lt;/p&gt;
+&lt;p&gt;DexGuard is built on ProGuard. This makes it easy to upgrade: you can reuse your ProGuard configuration and implement DexGuard’s additional layers of protection.&lt;/p&gt;
+&lt;p&gt;For more details, visit -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.guardsquare.com/en/blog/proguard-vs-dexguard&quot;&gt;Updated FAQ DexGuard vs ProGuard&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank You!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AndroidX Migration]]></title><description><![CDATA[Google has recently introduced a new way of organizing support libraries called
+AndroidX. Android Jetpack is a suite that provides tools…]]></description><link>https://blog.consisty.com/android/androidx_migration/</link><guid isPermaLink="false">https://blog.consisty.com/android/androidx_migration/</guid><pubDate>Wed, 19 Feb 2020 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
     &gt;
@@ -30,6 +150,34 @@ AndroidX. Android Jetpack is a suite that provides tools…]]></description><lin
 An advanced version of Android Support libraries. Version &lt;strong&gt;28.0.0&lt;/strong&gt; is the last release
 of the Support Library. There will be no more &lt;strong&gt;&lt;em&gt;android. support&lt;/em&gt;&lt;/strong&gt; library releases.
 All new feature development will be in the AndroidX namespace.&lt;/p&gt;
+&lt;h2 id=&quot;need-of-migration-into-androidx&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#need-of-migration-into-androidx&quot; aria-label=&quot;need of migration into androidx permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Need of Migration into AndroidX&lt;/h2&gt;
+&lt;p&gt;AndroidX is a major improvement to the original Android &lt;a href=&quot;https://developer.android.com/topic/libraries/support-library&quot;&gt;Support Library&lt;/a&gt; All packages in AndroidX live in a consistent namespace starting with the string AndroidX. The Support Library packages have been mapped into corresponding AndroidX. packages.&lt;/p&gt;
+&lt;p&gt;From August 1, 2019 , support for 64-bit architecture is made compulsory by Google Play due to performance improvements. But for each native 32-bit architecture you support/use you must include the corresponding 64-bit architecture. Hence, it became a confusing task for developers to manage different versions for each support library.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.645833333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABJ0AAASdAHeZh94AAABTklEQVQoz4WSi46DIBBF+f8v3K1N11eVNwgoMCrutJtttkmbPerNJOYywwVyOlVKqZFSxug4UqGkVMIYMyHO+eCdd9Y5rF0IKHaazGQRbQOpqvN1GNq25VwYa6TWEv3yJkrfwKXVXbFmXI5MUC4oE9dBkJhSRJaYIpQ/7K/Ytvu7F4CEg5J5mYMPaA0QfPYR4gILbLns5TiOn4WOV+Dk2DmjWU2aecY9t4vVi0HNkH+7bS/9IQTi5oT7wUQG3bby0shLp2oxDXlNx3v2Urz3JKBZSgyvo1U9fjT0s6eVNkOCiLsrx+uZ0xKtNtg5cs601bVpzrKq9VdrWx64Sw52eGdeAfAoScoZYF1XiGucYca04pb2sh//UBhjJKcZ038+j23F55nHLxQsMEJKKen7vm5q1O7a9SN+HRNMGWWNfYAX7n5ftLlhlRR9e2GcfwMS23d1BzYjtAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;&amp;quot;Need of AndroidX Migration&amp;quot;&quot;
+        title=&quot;&amp;quot;Need of AndroidX Migration&amp;quot;&quot;
+        src=&quot;/static/a6a5fb3d25d3c85316d50d75e4736ef9/fcda8/need_of_androidx_migration_02.png&quot;
+        srcset=&quot;/static/a6a5fb3d25d3c85316d50d75e4736ef9/12f09/need_of_androidx_migration_02.png 148w,
+/static/a6a5fb3d25d3c85316d50d75e4736ef9/e4a3f/need_of_androidx_migration_02.png 295w,
+/static/a6a5fb3d25d3c85316d50d75e4736ef9/fcda8/need_of_androidx_migration_02.png 590w,
+/static/a6a5fb3d25d3c85316d50d75e4736ef9/efc66/need_of_androidx_migration_02.png 885w,
+/static/a6a5fb3d25d3c85316d50d75e4736ef9/c83ae/need_of_androidx_migration_02.png 1180w,
+/static/a6a5fb3d25d3c85316d50d75e4736ef9/29114/need_of_androidx_migration_02.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The AndroidX library contains the existing support library and also includes the latest Jetpack components. You can continue to use the support library. Old artifacts (those versioned 27 and earlier, and packaged as &lt;code class=&quot;language-text&quot;&gt;android.support.&lt;/code&gt; will remain available on Google Maven. However, all new library development will occur in the AndroidX library.&lt;/p&gt;
 &lt;h2 id=&quot;1-prerequisites&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-prerequisites&quot; aria-label=&quot;1 prerequisites permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Prerequisites&lt;/h2&gt;
 &lt;p&gt;Migrating your current Android Project to AndroidX is really simple. But before
 migration, you will have to check the following:&lt;/p&gt;
@@ -60,12 +208,12 @@ android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enableJetif
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;gradle.properties&quot;
         title=&quot;gradle.properties&quot;
-        src=&quot;/static/f165d942463a8bd4de1170758f984b02/fcda8/gradle_properties_02.png&quot;
-        srcset=&quot;/static/f165d942463a8bd4de1170758f984b02/12f09/gradle_properties_02.png 148w,
-/static/f165d942463a8bd4de1170758f984b02/e4a3f/gradle_properties_02.png 295w,
-/static/f165d942463a8bd4de1170758f984b02/fcda8/gradle_properties_02.png 590w,
-/static/f165d942463a8bd4de1170758f984b02/efc66/gradle_properties_02.png 885w,
-/static/f165d942463a8bd4de1170758f984b02/84bf8/gradle_properties_02.png 1162w&quot;
+        src=&quot;/static/f165d942463a8bd4de1170758f984b02/fcda8/gradle_properties_03.png&quot;
+        srcset=&quot;/static/f165d942463a8bd4de1170758f984b02/12f09/gradle_properties_03.png 148w,
+/static/f165d942463a8bd4de1170758f984b02/e4a3f/gradle_properties_03.png 295w,
+/static/f165d942463a8bd4de1170758f984b02/fcda8/gradle_properties_03.png 590w,
+/static/f165d942463a8bd4de1170758f984b02/efc66/gradle_properties_03.png 885w,
+/static/f165d942463a8bd4de1170758f984b02/84bf8/gradle_properties_03.png 1162w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -87,13 +235,13 @@ android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enableJetif
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;select_migrate_to_androidx&quot;
         title=&quot;select_migrate_to_androidx&quot;
-        src=&quot;/static/a5ebed2ff09f27d139f4305f4b9a4d86/fcda8/select_migrate_to_androidx_03.png&quot;
-        srcset=&quot;/static/a5ebed2ff09f27d139f4305f4b9a4d86/12f09/select_migrate_to_androidx_03.png 148w,
-/static/a5ebed2ff09f27d139f4305f4b9a4d86/e4a3f/select_migrate_to_androidx_03.png 295w,
-/static/a5ebed2ff09f27d139f4305f4b9a4d86/fcda8/select_migrate_to_androidx_03.png 590w,
-/static/a5ebed2ff09f27d139f4305f4b9a4d86/efc66/select_migrate_to_androidx_03.png 885w,
-/static/a5ebed2ff09f27d139f4305f4b9a4d86/c83ae/select_migrate_to_androidx_03.png 1180w,
-/static/a5ebed2ff09f27d139f4305f4b9a4d86/8f5d7/select_migrate_to_androidx_03.png 1475w&quot;
+        src=&quot;/static/a5ebed2ff09f27d139f4305f4b9a4d86/fcda8/select_migrate_to_androidx_04.png&quot;
+        srcset=&quot;/static/a5ebed2ff09f27d139f4305f4b9a4d86/12f09/select_migrate_to_androidx_04.png 148w,
+/static/a5ebed2ff09f27d139f4305f4b9a4d86/e4a3f/select_migrate_to_androidx_04.png 295w,
+/static/a5ebed2ff09f27d139f4305f4b9a4d86/fcda8/select_migrate_to_androidx_04.png 590w,
+/static/a5ebed2ff09f27d139f4305f4b9a4d86/efc66/select_migrate_to_androidx_04.png 885w,
+/static/a5ebed2ff09f27d139f4305f4b9a4d86/c83ae/select_migrate_to_androidx_04.png 1180w,
+/static/a5ebed2ff09f27d139f4305f4b9a4d86/8f5d7/select_migrate_to_androidx_04.png 1475w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -112,11 +260,11 @@ android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enableJetif
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;click_on_migrate&quot;
         title=&quot;click_on_migrate&quot;
-        src=&quot;/static/6421b81907899d4e449ce241b1e50cae/fcda8/click_on_migrate_04.png&quot;
-        srcset=&quot;/static/6421b81907899d4e449ce241b1e50cae/12f09/click_on_migrate_04.png 148w,
-/static/6421b81907899d4e449ce241b1e50cae/e4a3f/click_on_migrate_04.png 295w,
-/static/6421b81907899d4e449ce241b1e50cae/fcda8/click_on_migrate_04.png 590w,
-/static/6421b81907899d4e449ce241b1e50cae/2ad15/click_on_migrate_04.png 801w&quot;
+        src=&quot;/static/6421b81907899d4e449ce241b1e50cae/fcda8/click_on_migrate_05.png&quot;
+        srcset=&quot;/static/6421b81907899d4e449ce241b1e50cae/12f09/click_on_migrate_05.png 148w,
+/static/6421b81907899d4e449ce241b1e50cae/e4a3f/click_on_migrate_05.png 295w,
+/static/6421b81907899d4e449ce241b1e50cae/fcda8/click_on_migrate_05.png 590w,
+/static/6421b81907899d4e449ce241b1e50cae/2ad15/click_on_migrate_05.png 801w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -135,13 +283,13 @@ android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enableJetif
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;do_refactor&quot;
         title=&quot;do_refactor&quot;
-        src=&quot;/static/d7159fd3e84b868f811b90554d2c39f8/fcda8/do_refactor_05.png&quot;
-        srcset=&quot;/static/d7159fd3e84b868f811b90554d2c39f8/12f09/do_refactor_05.png 148w,
-/static/d7159fd3e84b868f811b90554d2c39f8/e4a3f/do_refactor_05.png 295w,
-/static/d7159fd3e84b868f811b90554d2c39f8/fcda8/do_refactor_05.png 590w,
-/static/d7159fd3e84b868f811b90554d2c39f8/efc66/do_refactor_05.png 885w,
-/static/d7159fd3e84b868f811b90554d2c39f8/c83ae/do_refactor_05.png 1180w,
-/static/d7159fd3e84b868f811b90554d2c39f8/29114/do_refactor_05.png 1920w&quot;
+        src=&quot;/static/d7159fd3e84b868f811b90554d2c39f8/fcda8/do_refactor_06.png&quot;
+        srcset=&quot;/static/d7159fd3e84b868f811b90554d2c39f8/12f09/do_refactor_06.png 148w,
+/static/d7159fd3e84b868f811b90554d2c39f8/e4a3f/do_refactor_06.png 295w,
+/static/d7159fd3e84b868f811b90554d2c39f8/fcda8/do_refactor_06.png 590w,
+/static/d7159fd3e84b868f811b90554d2c39f8/efc66/do_refactor_06.png 885w,
+/static/d7159fd3e84b868f811b90554d2c39f8/c83ae/do_refactor_06.png 1180w,
+/static/d7159fd3e84b868f811b90554d2c39f8/29114/do_refactor_06.png 1920w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -151,7 +299,8 @@ android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enableJetif
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;For more details you can refer:&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.android.com/jetpack/androidx/migrate&quot;&gt;Android Docs | Migrate To AndroidX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Quick Start]]></title><description><![CDATA[Getting Started 😎 1. Create a Gatsby site. If you are not using , following Gatsby Getting Started 2. Start developing. 3. Add your content…]]></description><link>https://blog.consisty.com/development/quick_start/</link><guid isPermaLink="false">https://blog.consisty.com/development/quick_start/</guid><pubDate>Fri, 31 May 2019 16:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;getting-started-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-started-&quot; aria-label=&quot;getting started  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started 😎&lt;/h1&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank You!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Quick Start]]></title><description><![CDATA[Getting Started 😎 1. Create a Gatsby site. If you are not using , following Gatsby Getting Started 2. Start developing. 3. Add your content…]]></description><link>https://blog.consisty.com/development/quick_start/</link><guid isPermaLink="false">https://blog.consisty.com/development/quick_start/</guid><pubDate>Fri, 31 May 2019 16:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;getting-started-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#getting-started-&quot; aria-label=&quot;getting started  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Getting Started 😎&lt;/h1&gt;
 &lt;h2 id=&quot;1-create-a-gatsby-site&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-create-a-gatsby-site&quot; aria-label=&quot;1 create a gatsby site permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Create a Gatsby site.&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;# create a new Gatsby site using the blog starter
 $ npx gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
