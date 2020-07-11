@@ -1,12 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Consisty]]></title><description><![CDATA[Starting Learning]]></description><link>https://blog.consisty.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Mar 2020 05:15:01 GMT</lastBuildDate><item><title><![CDATA[Gradle in Android Studio]]></title><description><![CDATA[Gradle is an open-source build automation tool focused on flexibility and performance. Gradle build scripts are written using a Groovy or…]]></description><link>https://blog.consisty.com/android/gradle_in_android_studio/</link><guid isPermaLink="false">https://blog.consisty.com/android/gradle_in_android_studio/</guid><pubDate>Wed, 04 Mar 2020 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Gradle is an open-source build automation tool focused on flexibility and performance. Gradle build scripts are written using a Groovy or Kotlin DSL(Domain Specific Language). Android is using Gradle to automate and manage the build process. Also it defines flexible custom build configurations.&lt;/p&gt;
-&lt;p&gt;When you start a new project/application in Android Studio, it automatically generates some gradle related files for you.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Consisty]]></title><description><![CDATA[Starting Learning]]></description><link>https://blog.consisty.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Jul 2020 09:09:04 GMT</lastBuildDate><item><title><![CDATA[SweetAlertDialog : Unknown animation name Rotate3dAnimation]]></title><description><![CDATA[SweetAlertDialog : Unknown animation name Rotate3dAnimation Problem When using sweetAlertDialog in higher targetSdkVersion(>=16) and above…]]></description><link>https://blog.consisty.com/android/sweet_alert_dialog/</link><guid isPermaLink="false">https://blog.consisty.com/android/sweet_alert_dialog/</guid><pubDate>Sat, 11 Jul 2020 17:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;sweetalertdialog--unknown-animation-name-rotate3danimation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sweetalertdialog--unknown-animation-name-rotate3danimation&quot; aria-label=&quot;sweetalertdialog  unknown animation name rotate3danimation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SweetAlertDialog : Unknown animation name Rotate3dAnimation&lt;/h2&gt;
+&lt;h3 id=&quot;problem&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#problem&quot; aria-label=&quot;problem permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Problem&lt;/h3&gt;
+&lt;p&gt;When using sweetAlertDialog in higher targetSdkVersion(&gt;=16) and above facing issue for &lt;a href=&quot;https://github.com/pedant/sweet-alert-dialog&quot;&gt;SweetAlert library&lt;/a&gt; as,&lt;/p&gt;
+&lt;p&gt;&lt;font color=&apos;red&apos;&gt;java.lang.RuntimeException: Unknown animation name: cn.pedant.SweetAlert.Rotate3dAnimation error:null&lt;/font&gt;&lt;/p&gt;
+&lt;h3 id=&quot;solution&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#solution&quot; aria-label=&quot;solution permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Use latest sweetAlert package version in &lt;code class=&quot;language-text&quot;&gt;gradle.build&lt;/code&gt; file as,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;gradle&quot;&gt;&lt;pre class=&quot;language-gradle&quot;&gt;&lt;code class=&quot;language-gradle&quot;&gt;    dependencies {
+        implementation &amp;#39;com.github.f0ris.sweetalert:library:1.5.6&amp;#39;
+    }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But the after installation of the library in recent Android Studio versions with higher targetSdkVersion it will fail. So we need to add following rules in &lt;code class=&quot;language-text&quot;&gt;proguard-rules.pro&lt;/code&gt; file,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;gradle&quot;&gt;&lt;pre class=&quot;language-gradle&quot;&gt;&lt;code class=&quot;language-gradle&quot;&gt;     -keep class cn.pedant.SweetAlert.Rotate3dAnimation {
+         public &amp;lt;init&amp;gt;(...);
+      }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 53.697916666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABsUlEQVQoz5VTy47bMAz0///THloUBbqnXgok2O5mt3H0li1bchzLjyml2EkKtIcSHgwt0SOSogspOKTiUEZAKQHOGbRWEFKgZCcw2i9PiQUYFxQrYYyB0hraKNiqgnMOFbFQDsX3H0e8vBvsXgV2LxwnJiF1BWMrCraw1qL1Hk3bZvbJbxo4QtM4Wm/Q0l7iAx1WPH36iacvB3x+Zvj6rUT5eszBdV3DZTh0XYcxRgzDgHEc8YctCz1LdjlVU1gjYesKQ+yAeIanUyoSqSizLcNUzsYpw2maVq3lhmRKGRS1kKi1Rdd6RIKjXh0+LPY7jbdTifPQYZ5myizm7P4mtgkaq1Cg77FQSRmhg6MsDu8a+73B25HjHHtM40wVRMSYBGfMSWSr+Fp1thP/RYLr4sbeU7Odod7pDN/WCJ6a7+zN70KD/uxx6QMddqEPxwytzSqYjlhT74KjCwhY5guWqc+MhGVFWs/o1/17TAj+LrjB+4A4Tvdy/oGHS76CfCnlVfDRQgi3xv+vCbrQQilFfwf9KcQJjLH8noY3DewjPKGmAa5cjTYP9jUmzaxgHyTI8RtdEE+10zsoVwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB1UlEQVQoz2VSi1LbMBD0//9Xp4ECCRNqN7FDEoLfkiz5/V5OxgSHamZHOp283rs948EyEQuJru1QFBmUZIhCjsBnYHFMCChXARhmjIuzRn8D4/R2QcwYuq6DlBKcJ3DdGFEUIQxCIg7BmaCcQp7nhAJVVaOpW7QkYiT+JYyDYyOOQtR1gyzLIESCNC1QluUUK6Ugk4TuBRLaNXSubVoMwzCxjDP02fB8H6/OAZ7r0WMxKfQ8CcEZqfPh+wGVzVCTqr7TZX2vcUk2x8bx+IrnrYn1xsTp/EZqFByHwbaJzIunNqQqRVVW/xH+JNfLcKhky9rh5cXC+7sLRWWyOMflyBC6CXggEHlkUCgQexypyKF4NrWoob5XdT31/6pQl1ZVJSkoIdMUUqs0D5B7G3K3Q7KzIax/UHsHnHZu0tl2UJ7OyOlNQWa1t4TiKjslFxPTQnamfl4iqEuAPIxRcY6KTClpLxlHTz+GNoVIyaGbfhrava9VUFIFAUDzR+7MEJ8749e7kcZspDca0E4vlqFnMJtnS1LzeSLR9AP1p0c9oZvOLX3Y9jOG8Rs6t4CxWt3j/mGDX7/v8LTZ4nG9xRPhD92tn/9idfc4xfbhjL1zJJwW+Bmf8AH3+0VlhSgrSwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;proguard-rules.pro&quot;
+        title=&quot;proguard-rules.pro&quot;
+        src=&quot;/static/3b58e9936234eda37f4e5e5797b09bc2/fcda8/pro_guard_rules_01.png&quot;
+        srcset=&quot;/static/3b58e9936234eda37f4e5e5797b09bc2/12f09/pro_guard_rules_01.png 148w,
+/static/3b58e9936234eda37f4e5e5797b09bc2/e4a3f/pro_guard_rules_01.png 295w,
+/static/3b58e9936234eda37f4e5e5797b09bc2/fcda8/pro_guard_rules_01.png 590w,
+/static/3b58e9936234eda37f4e5e5797b09bc2/ee455/pro_guard_rules_01.png 863w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3 id=&quot;uses&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#uses&quot; aria-label=&quot;uses permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Uses&lt;/h3&gt;
+&lt;p&gt;SweetAlert is the best and clever dialog used in android. Display different types of alert depends on response,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&apos;mediumseagreen&apos;&gt;Success&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&apos;yellow&apos;&gt;Warning&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&apos;red&apos;&gt;Error&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&apos;dodgerblue&apos;&gt;Information&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&apos;coral&apos;&gt; Loading&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&apos;dodgerblue&apos;&gt; Confirmation&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Gradle in Android Studio]]></title><description><![CDATA[Gradle is an open-source build automation tool focused on flexibility and performance. Gradle build scripts are written using a Groovy or…]]></description><link>https://blog.consisty.com/android/gradle_in_android_studio/</link><guid isPermaLink="false">https://blog.consisty.com/android/gradle_in_android_studio/</guid><pubDate>Wed, 04 Mar 2020 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Gradle is an open-source build automation tool focused on flexibility and performance. Gradle build scripts are written using a Groovy or Kotlin DSL(Domain Specific Language). Android is using Gradle to automate and manage the build process. Also it defines flexible custom build configurations.&lt;/p&gt;
+&lt;p&gt;When you start a new project/application in Android Studio, it automatically generates some gradle related files for you.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABsUlEQVQoz5VTy47bMAz0///THloUBbqnXgok2O5mt3H0li1bchzLjyml2EkKtIcSHgwt0SOSogspOKTiUEZAKQHOGbRWEFKgZCcw2i9PiQUYFxQrYYyB0hraKNiqgnMOFbFQDsX3H0e8vBvsXgV2LxwnJiF1BWMrCraw1qL1Hk3bZvbJbxo4QtM4Wm/Q0l7iAx1WPH36iacvB3x+Zvj6rUT5eszBdV3DZTh0XYcxRgzDgHEc8YctCz1LdjlVU1gjYesKQ+yAeIanUyoSqSizLcNUzsYpw2maVq3lhmRKGRS1kKi1Rdd6RIKjXh0+LPY7jbdTifPQYZ5myizm7P4mtgkaq1Cg77FQSRmhg6MsDu8a+73B25HjHHtM40wVRMSYBGfMSWSr+Fp1thP/RYLr4sbeU7Odod7pDN/WCJ6a7+zN70KD/uxx6QMddqEPxwytzSqYjlhT74KjCwhY5guWqc+MhGVFWs/o1/17TAj+LrjB+4A4Tvdy/oGHS76CfCnlVfDRQgi3xv+vCbrQQilFfwf9KcQJjLH8noY3DewjPKGmAa5cjTYP9jUmzaxgHyTI8RtdEE+10zsoVwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -81,11 +125,11 @@ Helps to install and manage gradle wrappers in your project. It provides few com
 &lt;p&gt;To disable the proxy server go to: File → Settings → Appearance and Behaviour → System Settings → HTTP Proxy . In HTTP Proxy setting, select No Proxy, save setting (Apply) and click on OK.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 53.645833333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABzklEQVQoz3WT3W7UMBCF8/5vAhc8QpEQN6US3FBgtdkof7YTO7aTLCs1W7aHM05DF6mNNIoz9nxzxjPJ2qZBo1roTqPmuq5raK2htHr2d2jaFi19RtZKo+O763v0toMbBgQfEEJA50ZkZd3AOg/V9dDWciNinI/wcWSClhCTAIpAgUjgOI6I3I9jxDRNySdWOotsCCMmAiRT1Srs8gLGOmbzKGsCjYFzDpEBMcYEm+c5gcRkLbDz+cyEHbL9oUB+KKnE4vZe4+Ndji8/Le4LC++HpM57/y94A13bClwoKiDzwSdHox0+fNZ4d1Pg/SeNm68aA0voWeZA9W/BrhX6MCADn6enC0vq4agkLwoMPDBwnUplmVupr5lApYLlYWaV1Qq8XC5JRV4Z7EuN1k6otU2ZxS8BWzPeUrgsD/CDfwF6Og+Vxq7g2LD92q4QgV2rTN2N/6tMCpczTqfTCzAw4Nv3HfaEKgKNWyHhubvbHZ5+z7Qj13Pyicn+siywHLsElEecVaPQKo6Jj6lj0mUpOYFpx3nE3S+F2x8KE2dwuwo58/j4JzUwkzkTU0pB0xT/jrqqUjY5KI3ZzPN7X/NaSrVOAM84vo3pYFSJnj/BX+c9OpSahIwQAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABzklEQVQoz3WT3W7UMBCF8/5vAhc8QpEQN6US3FBgtdkof7YTO7aTLCs1W7aHM05DF6mNNIoz9nxzxjPJ2qZBo1roTqPmuq5raK2htHr2d2jaFi19RtZKo+O763v0toMbBgQfEEJA50ZkZd3AOg/V9dDWciNinI/wcWSClhCTAIpAgUjgOI6I3I9jxDRNySdWOotsCCMmAiRT1Srs8gLGOmbzKGsCjYFzDpEBMcYEm+c5gcRkLbDz+cyEHbL9oUB+KKnE4vZe4+Ndji8/Le4LC++HpM57/y94A13bClwoKiDzwSdHox0+fNZ4d1Pg/SeNm68aA0voWeZA9W/BrhX6MCADn6enC0vq4agkLwoMPDBwnUplmVupr5lApYLlYWaV1Qq8XC5JRV4Z7EuN1k6otU2ZxS8BWzPeUrgsD/CDfwF6Og+Vxq7g2LD92q4QgV2rTN2N/6tMCpczTqfTCzAw4Nv3HfaEKgKNWyHhubvbHZ5+z7Qj13Pyicn+siywHLsElEecVaPQKo6Jj6lj0mUpOYFpx3nE3S+F2x8KE2dwuwo58/j4JzUwkzkTU0pB0xT/jrqqUjY5KI3ZzPN7X/NaSrVOAM84vo3pYFSJnj/BX+c9OpSahIwQAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -111,11 +155,11 @@ Helps to install and manage gradle wrappers in your project. It provides few com
 and select &lt;code class=&quot;language-text&quot;&gt;Specified Location&lt;/code&gt; then select &lt;code class=&quot;language-text&quot;&gt;gradle wrapper&lt;/code&gt; from your downloaded folder.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 53.645833333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAAB30lEQVQoz1WTS28TMRSF5///BxZI7FgisWHFAoEoXYTSppQ0mczD7+c8EtCkPVw7nTSxdHQT+87n4+vroq5r1E2NTVNBao0QIkKMUEqhaZosxhiMMbDW5ui9vxATMs9LHVG0bYvYdWi4xPJPiU0twHSAMg6cM4K4/FGkTVJeih3Fc5mXnFIrFEwo+kMAcnd7/xtcaShK0CRDCUoKpE2FENCUM7tM8dzx4TBBUG7xsFpjvd7g+02JNx9+4e3HJd592uBqKbFYlngsE4yTW56hM8RRdO4o7y2eppE2NCi6vsM4juC6w5fFFl9/VvhxL7GqHRbrAasmIHh3PDKp73s6Zg/tqM425Gh9JIcHWKdR4GUMuz1WZYVtwyEp0dPHafz7u8sX5JzLGoYBHUGV8RDaUmlCBj4RkIn6FRj7EXd0KbcPa2xaRUkdnml+t99fXMDJKf3u+6NiDNmhMfYV6EOHb9eLDKy4zcA09gQMIVzALkTzaT0BU+kuHK62DLWwaFWA8fEEnFslxXGYXcXT/AxMpTkB+3EHYQLVL9IFBThyPE0T7brLLuYjV9zly0jQ8zI8U32klCgSNbVD6jXGWnB6Famh0+s4V2qbhtbff77D1c0jJOWkV5bWqopiW0JSe/0H6aY8PeAfhCgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAAB30lEQVQoz1WTS28TMRSF5///BxZI7FgisWHFAoEoXYTSppQ0mczD7+c8EtCkPVw7nTSxdHQT+87n4+vroq5r1E2NTVNBao0QIkKMUEqhaZosxhiMMbDW5ui9vxATMs9LHVG0bYvYdWi4xPJPiU0twHSAMg6cM4K4/FGkTVJeih3Fc5mXnFIrFEwo+kMAcnd7/xtcaShK0CRDCUoKpE2FENCUM7tM8dzx4TBBUG7xsFpjvd7g+02JNx9+4e3HJd592uBqKbFYlngsE4yTW56hM8RRdO4o7y2eppE2NCi6vsM4juC6w5fFFl9/VvhxL7GqHRbrAasmIHh3PDKp73s6Zg/tqM425Gh9JIcHWKdR4GUMuz1WZYVtwyEp0dPHafz7u8sX5JzLGoYBHUGV8RDaUmlCBj4RkIn6FRj7EXd0KbcPa2xaRUkdnml+t99fXMDJKf3u+6NiDNmhMfYV6EOHb9eLDKy4zcA09gQMIVzALkTzaT0BU+kuHK62DLWwaFWA8fEEnFslxXGYXcXT/AxMpTkB+3EHYQLVL9IFBThyPE0T7brLLuYjV9zly0jQ8zI8U32klCgSNbVD6jXGWnB6Famh0+s4V2qbhtbff77D1c0jJOWkV5bWqopiW0JSe/0H6aY8PeAfhCgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -138,11 +182,11 @@ and select &lt;code class=&quot;language-text&quot;&gt;Specified Location&lt;/co
 &lt;p&gt;When you do not mention version number, Gradle may download all the available versions.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 53.47432024169184%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAAB3UlEQVQoz21T2W6kMBDk/79vH6KNEhjwgS/AnDNgu7btZEbR7loquQFXd1HdrmrG0HUcTAgIJdH3PTjn0FqD9wJccBhrIHtJsUCvFASdESXWsFpiIN68LBiGERWTopCNHaGNQcclhOwLWWkFriw+uYXUDsM4fmGayu6GoXB1TuwoNg6VoZfWL0CKWOYZhqpn+HHAPE+YiOwGh2NZEe73gus4vkDxeQWc51X249hRZSWOqoVICaXESurmPuMTk3rD1L/hnDTivCD4GYGKJvq9tG6IxpKQhOcKIaBq2hvWhQ7SB8/Iy6aFlAqSMyjRQbCOdgmdlZN/GZNzuM4TkTxLlCT9TJh9+/i8ob61cJzQ/IZh77D8HU5+YJQ11r7F6SQe9gmBmFWPipw6CpDIjmtD5b2nRnB0pM5SZU9qj8eBe3pgC3vBmS78b2VlibzPyE8xXqgWSpATucHDT54aMZdGbNtOB2JhJbLjb+CJnwUocbWu6+vFQmbv+06jQB4aDTYrxFL93xViKo2M38hFiofbtr0O5fhOo5AVGlJ9v84X4YnwTXajR900uN2aMrd5sGeahIrRTambutyOtm3Bcnepk3mo89Dm2FiLMQ80zWzGRDEzirxn5cYI4jJCXf/CH6n+SNrRmr6TAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAAB3UlEQVQoz21T2W6kMBDk/79vH6KNEhjwgS/AnDNgu7btZEbR7loquQFXd1HdrmrG0HUcTAgIJdH3PTjn0FqD9wJccBhrIHtJsUCvFASdESXWsFpiIN68LBiGERWTopCNHaGNQcclhOwLWWkFriw+uYXUDsM4fmGayu6GoXB1TuwoNg6VoZfWL0CKWOYZhqpn+HHAPE+YiOwGh2NZEe73gus4vkDxeQWc51X249hRZSWOqoVICaXESurmPuMTk3rD1L/hnDTivCD4GYGKJvq9tG6IxpKQhOcKIaBq2hvWhQ7SB8/Iy6aFlAqSMyjRQbCOdgmdlZN/GZNzuM4TkTxLlCT9TJh9+/i8ob61cJzQ/IZh77D8HU5+YJQ11r7F6SQe9gmBmFWPipw6CpDIjmtD5b2nRnB0pM5SZU9qj8eBe3pgC3vBmS78b2VlibzPyE8xXqgWSpATucHDT54aMZdGbNtOB2JhJbLjb+CJnwUocbWu6+vFQmbv+06jQB4aDTYrxFL93xViKo2M38hFiofbtr0O5fhOo5AVGlJ9v84X4YnwTXajR900uN2aMrd5sGeahIrRTambutyOtm3Bcnepk3mo89Dm2FiLMQ80zWzGRDEzirxn5cYI4jJCXf/CH6n+SNrRmr6TAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -198,11 +242,11 @@ Proguard is completely optional, but it is highly recommended.&lt;/p&gt;
 &lt;h2 id=&quot;how-to-enable-proguard-in-android-studio&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-to-enable-proguard-in-android-studio&quot; aria-label=&quot;how to enable proguard in android studio permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to Enable Proguard in Android Studio&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 53.645833333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABJ0AAASdAHeZh94AAABgElEQVQoz4VS247dIAzM///Y9gfOQ7VSe1bbE3IhAcIt2EA6kN2+1hpZQ6SxPY6HH29vj8djXeUqd6XMppXc5L6rwxhzHNbZwx76OMAP55C0McpoxKbc8PP9XQght+01zkJMr3Gc5nlDSLntLRrvGXxepJjXaWn4fIlht+GqNcborCUiZPQj4tIjlwyUf7kHKDEvqxwwRa1XDNE6B3FKqfa4/hewNYhphlc0NFZDbLSx1oYQUSVRChRccimnSNGTB7mVqO6cG349P56/n/Oy+BDwCStBSe+7OHUx+ZPPk7/FfSZiap2nSUCplPLew2TrB8fEtz0uRJngkjN3wrchZm7iRJwow7D34YxJKd3+iYttL9wWVXItpYLUUvvAX2PD3XB7iDEEt18VNkF9yakWKoVqJhB0uiq3fOVOMrDM85c4pWgPafQavA6nMmG1YTuC9FEx+cKx5IbMAcCz5nMSYsCFLMsyjuK+EGQcDIbfO0CUxkEZ3BzQnrjCTf75bDv+C3JUd2qaEhzkAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABJ0AAASdAHeZh94AAABgElEQVQoz4VS247dIAzM///Y9gfOQ7VSe1bbE3IhAcIt2EA6kN2+1hpZQ6SxPY6HH29vj8djXeUqd6XMppXc5L6rwxhzHNbZwx76OMAP55C0McpoxKbc8PP9XQght+01zkJMr3Gc5nlDSLntLRrvGXxepJjXaWn4fIlht+GqNcborCUiZPQj4tIjlwyUf7kHKDEvqxwwRa1XDNE6B3FKqfa4/hewNYhphlc0NFZDbLSx1oYQUSVRChRccimnSNGTB7mVqO6cG349P56/n/Oy+BDwCStBSe+7OHUx+ZPPk7/FfSZiap2nSUCplPLew2TrB8fEtz0uRJngkjN3wrchZm7iRJwow7D34YxJKd3+iYttL9wWVXItpYLUUvvAX2PD3XB7iDEEt18VNkF9yakWKoVqJhB0uiq3fOVOMrDM85c4pWgPafQavA6nMmG1YTuC9FEx+cKx5IbMAcCz5nMSYsCFLMsyjuK+EGQcDIbfO0CUxkEZ3BzQnrjCTf75bDv+C3JUd2qaEhzkAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -261,11 +305,11 @@ Proguard is completely optional, but it is highly recommended.&lt;/p&gt;
 &lt;p&gt;I’m using a github library called SweetAlert in my app. As it is a third party library, Proguard was skipping it and the app crashed at runtime.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 53.541666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABt0lEQVQoz4WTC7PaIBCF8///Xzs1WjXmAYEAeRmFRE8PdLy9de60O3NmCWE/WHbJ6rpGWVdopEDbSgjRQCmVvsumhmhbNIJjrhOSYyr+151BZzSscxiGAY5e6h5ZQ0DXabi+x6XRKChBWFVdIFtuomTayJgO1pokQ5BhjNKK0ozvks6qRaY6i2GccFsW7hoXxBM0mEaH5TpwfkwK4Yo1LL+13pKCX+CplxeyQbY/7LHLc8TUp2lCtGmaqSvud8+FATcGXwm6r56e85vHV6Z5uKzvHXqmG2Exrejv/gbPoLAFrNtKBTweG57PJx7PR/LvimasRvaihxCY+pDgyrAoYwM989IXi9nPH0Eve4dFX4vLZ6DHOI5QrKpkEQ7mgFzvkHe8jqFO0HfQZ+DGTNpW/QF67zHNU6pazeru3RG5PWBn9yjGCgvv8V/Add2Y4fh3ys716M8F7OkIWf5AXXynvsGJM3iJ+J/F/vwAbtvGS+1hywqODS3liU3+k61whG4LDLNjcTZyH18qnlOy6TPBVxBbJtLrpkFRlkmShVG2Q8vKpTFlrU0vQrEbjDFJcS42dV2dIPlIfgEFx0thxOEM5AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABt0lEQVQoz4WTC7PaIBCF8///Xzs1WjXmAYEAeRmFRE8PdLy9de60O3NmCWE/WHbJ6rpGWVdopEDbSgjRQCmVvsumhmhbNIJjrhOSYyr+151BZzSscxiGAY5e6h5ZQ0DXabi+x6XRKChBWFVdIFtuomTayJgO1pokQ5BhjNKK0ozvks6qRaY6i2GccFsW7hoXxBM0mEaH5TpwfkwK4Yo1LL+13pKCX+CplxeyQbY/7LHLc8TUp2lCtGmaqSvud8+FATcGXwm6r56e85vHV6Z5uKzvHXqmG2Exrejv/gbPoLAFrNtKBTweG57PJx7PR/LvimasRvaihxCY+pDgyrAoYwM989IXi9nPH0Eve4dFX4vLZ6DHOI5QrKpkEQ7mgFzvkHe8jqFO0HfQZ+DGTNpW/QF67zHNU6pazeru3RG5PWBn9yjGCgvv8V/Add2Y4fh3ys716M8F7OkIWf5AXXynvsGJM3iJ+J/F/vwAbtvGS+1hywqODS3liU3+k61whG4LDLNjcTZyH18qnlOy6TPBVxBbJtLrpkFRlkmShVG2Q8vKpTFlrU0vQrEbjDFJcS42dV2dIPlIfgEFx0thxOEM5AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -286,11 +330,11 @@ Proguard is completely optional, but it is highly recommended.&lt;/p&gt;
 &lt;p&gt;To resolve this, I added the following lines in the &lt;code class=&quot;language-text&quot;&gt;proguard-rules.pro&lt;/code&gt; file.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 53.75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABfUlEQVQoz41Ti3KjMAzk///wpnfNtCHGb/wAEpvHngST9pLrdOqZRZZAy0qWm7Zt8U5oxQVCCLTtGUpJXDqOv0NIiU525HdQxqBTir7r0LGvJax36Pse3ntIE9AIemFcgHUU0AbaBmifofyIPo1IOSGlhJgOe98fiLvNOe/7k1ZotHGIMeF6naCspr+NGIYbrreCUiqWZcG6rvjJ4kqalz+v+PXyupfLhM6TihiIdECtdSfbtm1PYPsVeC3rAqkMmkDJMUaMRMA9EoLKiHlXtswHtnX7lpRXqYVaJtDc5bIa7oeTGZffBqb1CDZiyleUqX6U/Ux0t3OdcW5Pn4SlFOQho1KyO/eIKmOd14ekZ5X/xviHmg71kZBO6zaUnTDZYS/3u949q+W+PxDyiJSxwL4RoRmojDvhV9j+iympDkJ2lnmG7z0dyIRpIrK5ciE/xKGQh73hB4+MpqEUF7odb2fCCZZGKKVAI9Q/gmIuOISeEDz5fEsspDhB0hz+BUq5U6xsCGUTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 54.05405405405405%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABfUlEQVQoz41Ti3KjMAzk///wpnfNtCHGb/wAEpvHngST9pLrdOqZRZZAy0qWm7Zt8U5oxQVCCLTtGUpJXDqOv0NIiU525HdQxqBTir7r0LGvJax36Pse3ntIE9AIemFcgHUU0AbaBmifofyIPo1IOSGlhJgOe98fiLvNOe/7k1ZotHGIMeF6naCspr+NGIYbrreCUiqWZcG6rvjJ4kqalz+v+PXyupfLhM6TihiIdECtdSfbtm1PYPsVeC3rAqkMmkDJMUaMRMA9EoLKiHlXtswHtnX7lpRXqYVaJtDc5bIa7oeTGZffBqb1CDZiyleUqX6U/Ux0t3OdcW5Pn4SlFOQho1KyO/eIKmOd14ekZ5X/xviHmg71kZBO6zaUnTDZYS/3u949q+W+PxDyiJSxwL4RoRmojDvhV9j+iympDkJ2lnmG7z0dyIRpIrK5ciE/xKGQh73hB4+MpqEUF7odb2fCCZZGKKVAI9Q/gmIuOISeEDz5fEsspDhB0hz+BUq5U6xsCGUTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -312,11 +356,11 @@ Proguard is completely optional, but it is highly recommended.&lt;/p&gt;
 &lt;p&gt;Run your app in an emulator or device to start seeing data on your mobile app’s Overview page.&lt;/p&gt;
 &lt;p&gt;Thank You!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Proguard and DexGuard]]></title><description><![CDATA[Proguard The open source optimizer for Java byte-code. It is the most popular optimizer for Java byte-code. It makes your Java and Android…]]></description><link>https://blog.consisty.com/android/progaurd_and_dexgaurd/</link><guid isPermaLink="false">https://blog.consisty.com/android/progaurd_and_dexgaurd/</guid><pubDate>Sat, 22 Feb 2020 11:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 20%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA9ElEQVQI12NYcurJrCMPD99++x8Mnn/8ARSZd/TxlWefICI3nn8Giqw59/zVp59A7r///888ur3h0rFtV08z8OVvFynaYdl/MvPws8ADr1oPP1Wt2iNcuMN/4aXkQ89Sjzyv2XpbuWqPcdPRrAPbYs9NrLq5qmzTPLfptXaTyhg4srcK5G+36D2RtO+h557nLYefqlfvkS7d5bfwUvTeB4kHHhdvvKlYsUu//kjK3s1hp7rKrq/IWT3NflK5SU8+w/xjjyYfuL//5huII599+AEUmXnowcUnHyEiQMbsIw8Xn3j8/MMPiLOP3ru24tzBNReOAACTPqqj00g9XwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 20.27027027027027%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA9ElEQVQI12NYcurJrCMPD99++x8Mnn/8ARSZd/TxlWefICI3nn8Giqw59/zVp59A7r///888ur3h0rFtV08z8OVvFynaYdl/MvPws8ADr1oPP1Wt2iNcuMN/4aXkQ89Sjzyv2XpbuWqPcdPRrAPbYs9NrLq5qmzTPLfptXaTyhg4srcK5G+36D2RtO+h557nLYefqlfvkS7d5bfwUvTeB4kHHhdvvKlYsUu//kjK3s1hp7rKrq/IWT3NflK5SU8+w/xjjyYfuL//5huII599+AEUmXnowcUnHyEiQMbsIw8Xn3j8/MMPiLOP3ru24tzBNReOAACTPqqj00g9XwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -367,11 +411,11 @@ Proguard is completely optional, but it is highly recommended.&lt;/p&gt;
 &lt;p&gt;Thank You!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AndroidX Migration]]></title><description><![CDATA[Google has recently introduced a new way of organizing support libraries called
 AndroidX. Android Jetpack is a suite that provides tools…]]></description><link>https://blog.consisty.com/android/androidx_migration/</link><guid isPermaLink="false">https://blog.consisty.com/android/androidx_migration/</guid><pubDate>Wed, 19 Feb 2020 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 54.130434782608695%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAB8klEQVQoz2P4jwT+/fsHJF+/eXvsxMkTp05D0WkwgnGBUk+fv4AoZkDW/OfPHyA5eeZcq4CYwIwSn+Q8n5R8r4QiIPJJzgdyAzNLjd0DKxpagMr+/v2Lovkv2ObW7n63xNyUpglJDROSG/vzp9blTWpIapiY1NCX2THNJTaztLYRRfPfv/9+//7z98/fiuY2ExdvU1cfh5CY+OreysUZLeuCG9b5FMzKiK3oSW2e4BiVVlbXhKIZ4tvfv35W9MyMrGpLber1TS1PaW7oPhhUPz21cVZ6z56E+NqW1ObJTtFImiHavn//cfv+gwOHjxd3d5TMjymZGxeSXxJT1TT9UNH+qwtO3toweWtTfH1nZsd0FJshgbRq/SZhJU0RRf2QkpgVJ+oX72+MrMiKKOmcsmJVz6rWSes72+Ys9Egoii5tBvq5vB7V5nfv369av7G6oSW9qqVz6fS2BVNDcivja7oyWqZEVnTG1PTGlrZ4Jgb5JCfZhiaXoAUY3M9N0xZGVfWkNE0OyiwNSM4NSi8IySwKTitwjU6Ztb+puL9K3963vX8SWmj/Bbr/z+/f6WU1xh6Bpl7Bkel59+7dv3P33q3bdx89erzv0FHv+JTEgtJrN25+/PgJPZFALL9x6/aBQ4eB6MatW3BBCDh64uT1myiCAHPeymvcWfEWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 54.05405405405405%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAB8klEQVQoz2P4jwT+/fsHJF+/eXvsxMkTp05D0WkwgnGBUk+fv4AoZkDW/OfPHyA5eeZcq4CYwIwSn+Q8n5R8r4QiIPJJzgdyAzNLjd0DKxpagMr+/v2Lovkv2ObW7n63xNyUpglJDROSG/vzp9blTWpIapiY1NCX2THNJTaztLYRRfPfv/9+//7z98/fiuY2ExdvU1cfh5CY+OreysUZLeuCG9b5FMzKiK3oSW2e4BiVVlbXhKIZ4tvfv35W9MyMrGpLber1TS1PaW7oPhhUPz21cVZ6z56E+NqW1ObJTtFImiHavn//cfv+gwOHjxd3d5TMjymZGxeSXxJT1TT9UNH+qwtO3toweWtTfH1nZsd0FJshgbRq/SZhJU0RRf2QkpgVJ+oX72+MrMiKKOmcsmJVz6rWSes72+Ys9Egoii5tBvq5vB7V5nfv369av7G6oSW9qqVz6fS2BVNDcivja7oyWqZEVnTG1PTGlrZ4Jgb5JCfZhiaXoAUY3M9N0xZGVfWkNE0OyiwNSM4NSi8IySwKTitwjU6Ztb+puL9K3963vX8SWmj/Bbr/z+/f6WU1xh6Bpl7Bkel59+7dv3P33q3bdx89erzv0FHv+JTEgtJrN25+/PgJPZFALL9x6/aBQ4eB6MatW3BBCDh64uT1myiCAHPeymvcWfEWAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -401,11 +445,11 @@ All new feature development will be in the AndroidX namespace.&lt;/p&gt;
 &lt;p&gt;From August 1, 2019 , support for 64-bit architecture is made compulsory by Google Play due to performance improvements. But for each native 32-bit architecture you support/use you must include the corresponding 64-bit architecture. Hence, it became a confusing task for developers to manage different versions for each support library.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 53.645833333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABJ0AAASdAHeZh94AAABTklEQVQoz4WSi46DIBBF+f8v3K1N11eVNwgoMCrutJtttkmbPerNJOYywwVyOlVKqZFSxug4UqGkVMIYMyHO+eCdd9Y5rF0IKHaazGQRbQOpqvN1GNq25VwYa6TWEv3yJkrfwKXVXbFmXI5MUC4oE9dBkJhSRJaYIpQ/7K/Ytvu7F4CEg5J5mYMPaA0QfPYR4gILbLns5TiOn4WOV+Dk2DmjWU2aecY9t4vVi0HNkH+7bS/9IQTi5oT7wUQG3bby0shLp2oxDXlNx3v2Urz3JKBZSgyvo1U9fjT0s6eVNkOCiLsrx+uZ0xKtNtg5cs601bVpzrKq9VdrWx64Sw52eGdeAfAoScoZYF1XiGucYca04pb2sh//UBhjJKcZ038+j23F55nHLxQsMEJKKen7vm5q1O7a9SN+HRNMGWWNfYAX7n5ftLlhlRR9e2GcfwMS23d1BzYjtAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAABJ0AAASdAHeZh94AAABTklEQVQoz4WSi46DIBBF+f8v3K1N11eVNwgoMCrutJtttkmbPerNJOYywwVyOlVKqZFSxug4UqGkVMIYMyHO+eCdd9Y5rF0IKHaazGQRbQOpqvN1GNq25VwYa6TWEv3yJkrfwKXVXbFmXI5MUC4oE9dBkJhSRJaYIpQ/7K/Ytvu7F4CEg5J5mYMPaA0QfPYR4gILbLns5TiOn4WOV+Dk2DmjWU2aecY9t4vVi0HNkH+7bS/9IQTi5oT7wUQG3bby0shLp2oxDXlNx3v2Urz3JKBZSgyvo1U9fjT0s6eVNkOCiLsrx+uZ0xKtNtg5cs601bVpzrKq9VdrWx64Sw52eGdeAfAoScoZYF1XiGucYca04pb2sh//UBhjJKcZ038+j23F55nHLxQsMEJKKen7vm5q1O7a9SN+HRNMGWWNfYAX7n5ftLlhlRR9e2GcfwMS23d1BzYjtAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -444,11 +488,11 @@ migration, you will have to check the following:&lt;/p&gt;
 android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enableJetifier&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 73.92426850258175%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABJ0AAASdAHeZh94AAABZklEQVQ4y6WU626DMAyFef9HZNqPVhOUayAkIQmXMzsUyjqqDs3SpwAxJ8cmIcpLiboxkLKDqGsIIQJN0/wJzm3bFlme4XK5INJaQWsNYzSUUhvee0zThHEcN+Z5PoRDkU6S3hAtAosYC/PY930YnXMb1loMwxAW2ccqyPNfScYOWaRb6DrIVlL5D7gcpqM5zmXnq9DeoSPBsiwRFdTDNG2QZxK3okbZFcHJCguww/X+VcmcxwaiJBWI4xIfcYX4M0PW5bw+3sUvh86HSqKmUaiFRlUp+mIGNZXcO0srjiHJWhfga++ph/T+dLAezwXB3gjqXYlOFsvYFgGtKij5eB7u7yPTawFrmsA8GninFkHbSwxeB0aCJ8ZBU02WrBwzT/0PONc7fRekcg57hHOxlcz757nJodEvNvHbr7wXPBt7QdbJsvy1w/mkQ2MMneXrQ/C/wYLXKwnyuX3+CZyF3+djmSQpvgH8dpXf66iF4wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 73.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABJ0AAASdAHeZh94AAABZklEQVQ4y6WU626DMAyFef9HZNqPVhOUayAkIQmXMzsUyjqqDs3SpwAxJ8cmIcpLiboxkLKDqGsIIQJN0/wJzm3bFlme4XK5INJaQWsNYzSUUhvee0zThHEcN+Z5PoRDkU6S3hAtAosYC/PY930YnXMb1loMwxAW2ccqyPNfScYOWaRb6DrIVlL5D7gcpqM5zmXnq9DeoSPBsiwRFdTDNG2QZxK3okbZFcHJCguww/X+VcmcxwaiJBWI4xIfcYX4M0PW5bw+3sUvh86HSqKmUaiFRlUp+mIGNZXcO0srjiHJWhfga++ph/T+dLAezwXB3gjqXYlOFsvYFgGtKij5eB7u7yPTawFrmsA8GninFkHbSwxeB0aCJ8ZBU02WrBwzT/0PONc7fRekcg57hHOxlcz757nJodEvNvHbr7wXPBt7QdbJsvy1w/mkQ2MMneXrQ/C/wYLXKwnyuX3+CZyF3+djmSQpvgH8dpXf66iF4wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -471,11 +515,11 @@ android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enableJetif
 &lt;li&gt;Select ‘Migrate To AndroidX’
 &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 41.96610169491525%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAABJ0AAASdAHeZh94AAABO0lEQVQY03VQ7VLDIBDM+z+ND+GMU3WczvSPrbZNA4QQSPgmEgL1WrX6x4W5udtjuYWqbt4aQt6P+xM6HRt8d4822xPvGSEEmAZjJnjPmRgl4z2AdozQlgvRc149r1c1QpCJUSkp1cB6Ro2xCiolnXPGWgPLWm0u0FpDC0pKaYVwo42XKuRlsc5hQhhj0JNSjlKmlHKGzgLx/INSCkRjXTUMgnRiW4814mIYW7CLsTVmEIJzbq+A+d77GONfMTBV27YI492+bhCBi3rBad+PGjyDN5PSHK/4sgDC23wgK2ftuYCxWEq2PpDX7eHh8bB6ErQL03T+HxcxvO3mJATX7XfH9UuzWXeo1noIXjsrvVOQTMHGD5fmMM+hZNCGCn7v9xlWxeiWElOe5tktyeclfO8UoLww13jOE5z8BBjuxLhcfSPcAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 41.891891891891895%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAABJ0AAASdAHeZh94AAABO0lEQVQY03VQ7VLDIBDM+z+ND+GMU3WczvSPrbZNA4QQSPgmEgL1WrX6x4W5udtjuYWqbt4aQt6P+xM6HRt8d4822xPvGSEEmAZjJnjPmRgl4z2AdozQlgvRc149r1c1QpCJUSkp1cB6Ro2xCiolnXPGWgPLWm0u0FpDC0pKaYVwo42XKuRlsc5hQhhj0JNSjlKmlHKGzgLx/INSCkRjXTUMgnRiW4814mIYW7CLsTVmEIJzbq+A+d77GONfMTBV27YI492+bhCBi3rBad+PGjyDN5PSHK/4sgDC23wgK2ftuYCxWEq2PpDX7eHh8bB6ErQL03T+HxcxvO3mJATX7XfH9UuzWXeo1noIXjsrvVOQTMHGD5fmMM+hZNCGCn7v9xlWxeiWElOe5tktyeclfO8UoLww13jOE5z8BBjuxLhcfSPcAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -496,11 +540,11 @@ android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enableJetif
 &lt;li&gt;Depending on your project dependencies, there might occur some errors after migration and might need to resolve them manually. Hence, you can take backup of your project. (Taking backup of the project is optional)
 &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 47.690387016229714%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABJ0AAASdAHeZh94AAABkElEQVQoz4VSy26DQAzM/1966KFSK/Uneojannuv1FMQjwUCyzNkWRJIiDK1HYhSqVWRRmvL9nhsszBtg/V6jTRN0TQNyrJEURSoqkr8vu//xX6/F5zPZyx0GSPLCyHK8xzb7faaOAwDjscjDoeDvH+B41x/Op2wSINPlNpBlpUEjSRJRHGWZWSnovwyQSIx9uM4El9TzpzLE43jiEWuY5R5ikApeL4nbxiGUIQg8OF5HnzfRxRFiOJY7EAF4nMO+3lxmVAIjWnRtpaKAwlKwWS7RMZNFDVRUyPHcSTGjVzPvcZZpYzMO2Ow9HlcflUYkZIQISnhBopU1XUNYwzmmlvwIYXQkFM3Bh9f8dSdVLku7ZWOlSgMtsFmU6OayNq2/RU/CK212GxbKmzAflE1eHz3cfeywv3SQ7bp0O872K5DR2ACrpnJ2L5euZgWWjGqWtSkdPGnVwfPbw4elisESQmdrmUdrFTy6aq30FpfCJmdL8Z7413IWITDzmAcOmDsseusqOjs9JJKO9kz+Mfm7xtT5uynflAULAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 47.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABJ0AAASdAHeZh94AAABkElEQVQoz4VSy26DQAzM/1966KFSK/Uneojannuv1FMQjwUCyzNkWRJIiDK1HYhSqVWRRmvL9nhsszBtg/V6jTRN0TQNyrJEURSoqkr8vu//xX6/F5zPZyx0GSPLCyHK8xzb7faaOAwDjscjDoeDvH+B41x/Op2wSINPlNpBlpUEjSRJRHGWZWSnovwyQSIx9uM4El9TzpzLE43jiEWuY5R5ikApeL4nbxiGUIQg8OF5HnzfRxRFiOJY7EAF4nMO+3lxmVAIjWnRtpaKAwlKwWS7RMZNFDVRUyPHcSTGjVzPvcZZpYzMO2Ow9HlcflUYkZIQISnhBopU1XUNYwzmmlvwIYXQkFM3Bh9f8dSdVLku7ZWOlSgMtsFmU6OayNq2/RU/CK212GxbKmzAflE1eHz3cfeywv3SQ7bp0O872K5DR2ACrpnJ2L5euZgWWjGqWtSkdPGnVwfPbw4elisESQmdrmUdrFTy6aq30FpfCJmdL8Z7413IWITDzmAcOmDsseusqOjs9JJKO9kz+Mfm7xtT5uynflAULAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -519,11 +563,11 @@ android&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;enableJetif
 &lt;li&gt;Now this will show the refactor window with the list of all the files using android support libraries. Just click &lt;strong&gt;&lt;em&gt;Do Refactor&lt;/em&gt;&lt;/strong&gt;.
 &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 32.8125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABJ0AAASdAHeZh94AAAA8UlEQVQoz53RXU+DMBQG4P7/X2bihCmyTAZDFErpFxQWsonl9QxNjMlusMnTXpxz3l4cFsU7PD49I8sL8FqCC4m6UVC6he0GtO5X50639aelrk0LpoyB1gqcczjnME0f8N4D84y1Z6YZ9l5WkOonsO8p8HPJ8nR5vwL1X2eZamq4VsMaifM40DcT/n88WHwosdkLbHYloswg5SOO4kLOK12QixEsSmrcxQ0e9hJBYnH/0iI4OGyzAWHWL4L0yt0UUi1Mv3u2KS2leD2irmjDJaE32cco8hRWCaiGQ0uOzkoMzhLzR98ZWC3QmgZKVJTzhi9FKhOhOlyGsAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 33.108108108108105%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABJ0AAASdAHeZh94AAAA8UlEQVQoz53RXU+DMBQG4P7/X2bihCmyTAZDFErpFxQWsonl9QxNjMlusMnTXpxz3l4cFsU7PD49I8sL8FqCC4m6UVC6he0GtO5X50639aelrk0LpoyB1gqcczjnME0f8N4D84y1Z6YZ9l5WkOonsO8p8HPJ8nR5vwL1X2eZamq4VsMaifM40DcT/n88WHwosdkLbHYloswg5SOO4kLOK12QixEsSmrcxQ0e9hJBYnH/0iI4OGyzAWHWL4L0yt0UUi1Mv3u2KS2leD2irmjDJaE32cco8hRWCaiGQ0uOzkoMzhLzR98ZWC3QmgZKVJTzhi9FKhOhOlyGsAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -619,11 +663,11 @@ $ npm start
 Happy blogging! 👻&lt;/p&gt;
 &lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Welcome Bee starter]]></title><description><![CDATA[Welcome, Gatsby! This starter is full-package for your new blog! 1. Support Four frontmatter title date category draft 2. Code highlighting…]]></description><link>https://blog.consisty.com/development/hello/</link><guid isPermaLink="false">https://blog.consisty.com/development/hello/</guid><pubDate>Wed, 06 Feb 2019 16:21:13 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 466px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 466px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 95.70815450643778%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAADIklEQVQ4y21UZ09UQRR9v0Jjib3E2Hv5YoyJGk0MgmIBFRCkaCIawYISTNQEF6RIBwVZFKQYmkGagJGioIIUwYgYQJpIXZa2u8d3L77He7g3mbzZ2Zkz59x75gr4FyaTiYc0NxqMMBpNmBmGyel15RkpBCUgBW1WbhrTT2CoTw/dwKhqnS5UEpABlbfQJimqS34ixD0H7nvicG59OJy3ROK2ZRLSgivQ2zE0BWQ0/QcqzAQjNoEXX+HoPH8GCnDLRpKmFHE+RfCySMSx+f5w2hSBktR6s6kSJJkUw/2jzIIOpQSUs8w/ncNo/tKF1qZejAyN4UdtN24efg7LOX7Iif2sks+AyhtCLr9mZmXZTRgdmUC4Rx5LtV0ejLOrQnB1XzxKMxqZgL9zFk4tDUJDRZtKoSBNvr5vZ2bae28xMW6Ax34tTi4OZHnOW6MY2H5tGE4sCkBqUAUe3yrE8YUB8LVPV0mXAWO8CvkAyQ6/mstgbjtjcH5zpDwI1HV7NOxWh8JhXRhctkXBaWMEWup7ZIcIkrd8rJP5QF/XMIpT6nF65aMpIHGNWNLcUTxsuyKY/6NhtyaUv7RfwmFASvb1Q8/4VsoT/S5Ja+DcScwcN4Tjwq4YRN0o4Io/8X6DINENNsuCkB39UQ04PjrJQL4O6ewztx3R0A+Py6AEeE4EvLL3KRorf7FE3eAYV/7kkkDkaWumASXLUNWIAUWS5h3nT68bZzkSUxokn4r3Ifc7SjMbeV5X1ipXWiBUCjpI3pLyEX+3hC8gUJmpWG1idP/MS34l3lYvcGl3LMZEi8nGljxIi2QVqmJ36wCvaUVQV1H+iCiPXgaB+TpksK0ob0dma2RzG/6ZW1Casr68jatGufr2qYPX0kM/cH77e3T43T7Ihs+MqITVXD9onDJVncfsW64qaGZ70Ct4JDaHqvxm3DmegmsHE5CfUMNfi1kP4O+SxYVTPl2VZPpIoJ0t/Yj0zOfmYL3gIRvZRswhvQzPA1oUJtaq2piK4cx+pmxhfd06VBe3oCi5jitKTWJywjC910yjFcx1bNporlvLXXtGc1US+gtbe+VlgtA+ywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 95.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAADIklEQVQ4y21UZ09UQRR9v0Jjib3E2Hv5YoyJGk0MgmIBFRCkaCIawYISTNQEF6RIBwVZFKQYmkGagJGioIIUwYgYQJpIXZa2u8d3L77He7g3mbzZ2Zkz59x75gr4FyaTiYc0NxqMMBpNmBmGyel15RkpBCUgBW1WbhrTT2CoTw/dwKhqnS5UEpABlbfQJimqS34ixD0H7nvicG59OJy3ROK2ZRLSgivQ2zE0BWQ0/QcqzAQjNoEXX+HoPH8GCnDLRpKmFHE+RfCySMSx+f5w2hSBktR6s6kSJJkUw/2jzIIOpQSUs8w/ncNo/tKF1qZejAyN4UdtN24efg7LOX7Iif2sks+AyhtCLr9mZmXZTRgdmUC4Rx5LtV0ejLOrQnB1XzxKMxqZgL9zFk4tDUJDRZtKoSBNvr5vZ2bae28xMW6Ax34tTi4OZHnOW6MY2H5tGE4sCkBqUAUe3yrE8YUB8LVPV0mXAWO8CvkAyQ6/mstgbjtjcH5zpDwI1HV7NOxWh8JhXRhctkXBaWMEWup7ZIcIkrd8rJP5QF/XMIpT6nF65aMpIHGNWNLcUTxsuyKY/6NhtyaUv7RfwmFASvb1Q8/4VsoT/S5Ja+DcScwcN4Tjwq4YRN0o4Io/8X6DINENNsuCkB39UQ04PjrJQL4O6ewztx3R0A+Py6AEeE4EvLL3KRorf7FE3eAYV/7kkkDkaWumASXLUNWIAUWS5h3nT68bZzkSUxokn4r3Ifc7SjMbeV5X1ipXWiBUCjpI3pLyEX+3hC8gUJmpWG1idP/MS34l3lYvcGl3LMZEi8nGljxIi2QVqmJ36wCvaUVQV1H+iCiPXgaB+TpksK0ob0dma2RzG/6ZW1Casr68jatGufr2qYPX0kM/cH77e3T43T7Ihs+MqITVXD9onDJVncfsW64qaGZ70Ct4JDaHqvxm3DmegmsHE5CfUMNfi1kP4O+SxYVTPl2VZPpIoJ0t/Yj0zOfmYL3gIRvZRswhvQzPA1oUJtaq2piK4cx+pmxhfd06VBe3oCi5jitKTWJywjC910yjFcx1bNporlvLXXtGc1US+gtbe+VlgtA+ywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -679,11 +723,11 @@ draft: false
 &lt;p&gt;&lt;em&gt;code&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 104.97131931166348%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAAC4UlEQVQ4y52UbU/TUBiG91cQ2Lq163t72vVlZWPjxRBjYvwNSqK/ARL9ZmIUEzXKhwEjgEGDBgyIyO/ah90+z+lwQwcRPtw97cnp1ft5a+Hw+0nv5PSsd3p23vvx89ctdd47JgazCodHx/iwvoEXL99i7dV7rK2R3txMr1+/w8f1DgiIwt7ng/6D9v3+w8jsG023ryhuv1IklVjOH5WL46XS+ekJoz/bWOrvf/naL2x2dzBbX4RRMqEZAsq0LVWSq0OrI1eCggD/iD6M6Tsm6skctrZ3UOhsdjGTLcA1QkTuDKKgDVuPENg12FWBwBSwNV+CGaCMgFiq4qE4aSKN59DZ3GbgNhr1BfjkzjVrCMUsBIFdowaLQKEVwNUFTNWHQTJVD3rZuwT9C9hFM1uEo3nwrAhx2EZNtGBWCag6qNkBBLkMLQ/C8BDRs6eLQRrGAnOHgtxFfgue3UTkJEhFgkRkSPyYQk/hGPRRYx5aOZJhM6h8FZATaqox6uE9gt5F7LURUg5baRuxG0GvBAQKUSVxzvICuVc7zNJ5TE3osKo+2kmGTMRwqCBu1ZN50wiiKqPVZXfD4owFcukdnVxFGVU7hqB8unoIW3UJ7MuiqYrIQx0pyLVAQwtkqNxC1bIPldtCtoabuxoBXVPlITAL6mjUUvhWSuE3yaGP2All61RKw1b5L4fFSQvCjlBzItnQefJzh5VrxO7HVHkelaINUxMytNJg5EqXRjBfuWVKU7YUjyifn5oYAW7QJaW20ahqS40W6hS2zxNDuYyoZUJy7eiBdO6bIU1PgLpISQmNJ40opcOqOONCtqGr+YixOGwGsQzad42A9vJ73rt45nPVkn159LJ0QYbAOVEGf5dLKg7/Onw/+hfKQzaQRO1ByFs0ejTLnNiLQoyVclVRPDJjSlPMKuzu7WNl9TmWl5/i0eMntxK/u7L6DDvEKhx8O8Lup31J72x0wSm4kegdfpcZzPoN0agnefU0/LsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 104.72972972972974%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAAC4UlEQVQ4y52UbU/TUBiG91cQ2Lq163t72vVlZWPjxRBjYvwNSqK/ARL9ZmIUEzXKhwEjgEGDBgyIyO/ah90+z+lwQwcRPtw97cnp1ft5a+Hw+0nv5PSsd3p23vvx89ctdd47JgazCodHx/iwvoEXL99i7dV7rK2R3txMr1+/w8f1DgiIwt7ng/6D9v3+w8jsG023ryhuv1IklVjOH5WL46XS+ekJoz/bWOrvf/naL2x2dzBbX4RRMqEZAsq0LVWSq0OrI1eCggD/iD6M6Tsm6skctrZ3UOhsdjGTLcA1QkTuDKKgDVuPENg12FWBwBSwNV+CGaCMgFiq4qE4aSKN59DZ3GbgNhr1BfjkzjVrCMUsBIFdowaLQKEVwNUFTNWHQTJVD3rZuwT9C9hFM1uEo3nwrAhx2EZNtGBWCag6qNkBBLkMLQ/C8BDRs6eLQRrGAnOHgtxFfgue3UTkJEhFgkRkSPyYQk/hGPRRYx5aOZJhM6h8FZATaqox6uE9gt5F7LURUg5baRuxG0GvBAQKUSVxzvICuVc7zNJ5TE3osKo+2kmGTMRwqCBu1ZN50wiiKqPVZXfD4owFcukdnVxFGVU7hqB8unoIW3UJ7MuiqYrIQx0pyLVAQwtkqNxC1bIPldtCtoabuxoBXVPlITAL6mjUUvhWSuE3yaGP2All61RKw1b5L4fFSQvCjlBzItnQefJzh5VrxO7HVHkelaINUxMytNJg5EqXRjBfuWVKU7YUjyifn5oYAW7QJaW20ahqS40W6hS2zxNDuYyoZUJy7eiBdO6bIU1PgLpISQmNJ40opcOqOONCtqGr+YixOGwGsQzad42A9vJ73rt45nPVkn159LJ0QYbAOVEGf5dLKg7/Onw/+hfKQzaQRO1ByFs0ejTLnNiLQoyVclVRPDJjSlPMKuzu7WNl9TmWl5/i0eMntxK/u7L6DDvEKhx8O8Lup31J72x0wSm4kegdfpcZzPoN0agnefU0/LsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
